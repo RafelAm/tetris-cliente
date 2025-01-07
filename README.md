@@ -1,5 +1,5 @@
 ## 🕹️ Tetris
-  This Tetris was created with JavaScript, in 9 days. Thanks to this project I learned JavaScript quickly.
+  This Tetris was created with JavaScript and Canva on HTML, in 9 days. Thanks to this project I learned JavaScript quickly.
 
 ## 🕹️ How to Play
   Download the repository, open index.html and play!
