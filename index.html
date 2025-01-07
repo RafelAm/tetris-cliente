@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+    <title>Tetris</title>
+
+    <style>
+        body{
+            background-color: black;
+            font-family: "VT323" , "monospace";
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+        canvas{
+            display: flex;
+            margin: 0 auto;
+            background-color: #000;
+            border: 3px solid #83d804;
+            box-shadow: 0 0 400px #83d804, inset 0 0 15px #83d804;
+        }
+        #info {
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            margin: 1%;
+            font-size: 0.7em;
+            background-color: #6db600;
+            color: white;
+        }
+        #puntos{
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 1%;
+            background-color: #6db600;
+            color: white;
+        }
+
+        #pieza {
+            width: 20%;
+            background-color: #000;
+        }
+        #piezaSig{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            right: 33%;
+            top: 51.5%;
+        }
+        .text{
+            flex-direction: column;
+            text-align: center;
+            width: 70%;
+            background-color: #6db600;
+            color: white;
+            margin: 0 0 1% 0;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        
+        .botones{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+        button{
+            width: 6vw;
+            height: 4vh;
+            margin: 5% 2%;
+            color: white;
+            border: 0;
+        }
+        button:nth-child(1){
+            background-color: red;
+        }
+        button:nth-child(2){
+            background-color: green;
+        }
+        button:nth-child(3){
+            background-color: orange;
+        } 
+        .main{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body >
+    <div class="main">
+
+
+    <div class="content">
+        <div id="info"></div>
+        <div id="puntos"></div>
+    <canvas class="border" id="tetris" width="300" height="600"></canvas>
+    <div class="botones">    
+        <button onclick="stop()">Parar</button>
+        <button onclick="start()">Seguir</button>
+        <button onclick="location.reload()">Reiniciar</button></div>
+    </div>
+
+    <div id="piezaSig">    
+        <div class="text"><h2>Siguiente Pieza</h2></div>
+        <canvas id="sigPieza" width="150" height="150"></canvas>
+    </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
