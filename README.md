@@ -2,7 +2,7 @@
   This Tetris was created with JavaScript, in 9 days. Thanks to this project I learned JavaScript quickly.
 
 ## 🕹️ How to Play
-  download the repository, open index.html and play!
+  Download the repository, open index.html and play!
 
   W -> Rotate piece
   
